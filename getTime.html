@@ -1,0 +1,23 @@
+<html>
+  <head>
+  
+    <script type="text/javascript">
+       function getTime() {               
+               const now = new Date();
+               const hours = now.getHours();
+               const minutes = now.getMinutes();
+               const currentTime = `The current time is ${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+               document.write(currentTime);
+			}   
+	</script>	 
+	
+  </head>
+  
+    <body>
+	         
+         <p>Click the button to get the current time:</p>		 
+         <form>
+             <input type="button" value="Click me" onclick="getTime()" />
+         </form>
+	</body>	 
+</html>	
